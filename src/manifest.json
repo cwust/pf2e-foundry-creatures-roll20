@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "PF2e Foundry Creatures in Roll20",
+  "version": "0.1",
+  "description": "Imports Foundry PF2 Creatures into Roll20",
+  "browser_action": {
+    "default_title": "Import creature",
+    "default_popup": "/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.roll20.net/editor/"
+      ],
+      "js": [
+        "assets/js/jquery-3.6.3.min.js",
+        "assets/js/import-creature.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pf2.foundry.creatures.in.roll20@cwust.br"
+    }
+  }
+}

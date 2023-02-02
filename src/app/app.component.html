@@ -1,0 +1,19 @@
+<p-tree
+  scrollHeight="200px"
+  [value]="nodes" [loading]="loading"
+  (onNodeExpand)="nodeExpand($event)"
+  selectionMode="single" [(selection)]="selectedNode" 
+  (onNodeSelect)="nodeSelect($event)" (onNodeUnselect)="nodeUnselect($event)">
+
+  <ng-template let-node pTemplate="selectableNode">
+    <div style="display: flex; flex-wrap: nowrap;align-items: center;">
+      <span style="padding-right: 8px;">{{node.label}}</span>
+      <p-button 
+        *ngIf="node.data.selected"
+        styleClass="p-button p-button-sm" 
+        icon="pi pi-angle-double-right"
+        label="Import"
+        (onClick)="import(node)"></p-button>
+    </div>
+  </ng-template>
+</p-tree>

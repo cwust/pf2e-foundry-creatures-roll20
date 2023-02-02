@@ -1,0 +1,7 @@
+::ng-deep .p-treenode-content {
+    padding: 0 !important;
+}
+
+p-button ::ng-deep * {
+    font-size: 10px !important;
+}
