@@ -1,5 +1,5 @@
 {
-  "name": "pf2-roll20-importer",
+  "name": "pf2e-foundry-creatures-roll20",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

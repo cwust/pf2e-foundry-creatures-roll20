@@ -18,6 +18,12 @@
       ]
     }
   ],
+  "icons": {
+    "32": "assets/icons/pf2foundryroll20-32.png",
+    "48": "assets/icons/pf2foundryroll20-48.png",
+    "64": "assets/icons/pf2foundryroll20-64.png",
+    "128": "assets/icons/pf2foundryroll20-128.png"
+  },
   "permissions": [
     "activeTab"
   ],

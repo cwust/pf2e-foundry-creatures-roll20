@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pf2-roll20-importer": {
+    "pf2e-foundry-creatures-roll20": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pf2-roll20-importer",
+            "outputPath": "dist/pf2e-foundry-creatures-roll20",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pf2-roll20-importer:build:production"
+              "browserTarget": "pf2e-foundry-creatures-roll20:build:production"
             },
             "development": {
-              "browserTarget": "pf2-roll20-importer:build:development"
+              "browserTarget": "pf2e-foundry-creatures-roll20:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pf2-roll20-importer:build"
+            "browserTarget": "pf2e-foundry-creatures-roll20:build"
           }
         },
         "test": {
